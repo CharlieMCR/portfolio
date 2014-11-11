@@ -1,0 +1,264 @@
+.hide { display: none; }
+
+body {
+    font: 16px 'Verdana', 'Arial', sans-serif;
+    color: #1c1c1c;
+}
+
+p,
+ul {
+    margin: 0 0 1.5em;
+}
+
+ul {
+    list-style: disc;
+    padding: 0 0 0 20px
+}
+
+a {
+    color: #1D745A;
+}
+
+h1 {
+    
+}
+
+h2{
+    font-family: inherit;
+    font-size: 32px;
+    line-height: 1.4em;
+    margin: 0 0 .4em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 0 0 1em;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 16;
+    margin: 0 0 0.5em;
+    font-weight: bold;
+}
+
+/*layout*/
+
+.wrapper {
+}
+
+article {
+    border-bottom: 1px solid #d8d8d8;
+    padding: 10px 20px 0 20px;
+    margin: 10px 0;
+}
+
+/*header*/
+
+header {
+    background: #555;
+    padding: 15px 20px;
+}
+    /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack*/
+    header:before,
+    header:after {
+        content: "";
+        display: table;
+    }
+    
+    header:after {
+        clear:both;
+    }
+
+    /* For IE 6/7 (trigger hasLayout) */
+    header {
+        zoom:1;
+    }
+
+h1.logo a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: normal;
+    text-transform: none;
+    font-size: 20px;
+    line-height: 22px;
+    float: left;
+    letter-spacing: normal;
+}
+
+a.to_nav {
+    float: right;
+    color: #ccc;
+    background: #555;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 22px;
+    height: 22px;
+    text-transform: none;
+    letter-spacing: 0.1em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+a.to_nav:hover,
+a.to_nav:focus {
+    color: #1c1c1c;
+    background: #ccc;
+}
+
+/*navigation*/
+
+#primary_nav ul {
+    list-style: none;
+    background: #555;
+    padding: 5px 0;
+}
+
+#primary_nav li a {
+    display: block;
+    padding: 0 20px;
+    color: #ccc;
+    text-decoration: none;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: ;
+    letter-spacing: ;
+    line-height: 2em;
+    height: 2em;
+    border-bottom: 1px solid #383838;
+}
+
+#primary_nav li:last-child a {
+    border-bottom: none;
+}
+
+#primary_nav li a:hover,
+#primary_nav li a:focus {
+    color: #1c1c1c;
+    background: #ccc;
+}
+
+/*footer*/
+
+footer {
+    font-family: inherit;
+    font-style: normal;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+ 
+    a.to_nav {
+        display: none;
+    }
+     
+    .wrapper {
+        position: relative;
+        width: 768px;
+        margin: auto;
+    }
+     
+    #primary_nav {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        background: none;
+    }
+     
+    #primary_nav li {
+        display: inline;
+    }
+     
+    #primary_nav li a {
+        float: left;
+        border: none;
+        padding: 0 10px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+    }
+    #primary_nav li.top {
+    display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+ 
+    a.to_nav {
+        display: none;
+    }
+     
+    .wrapper {
+        position: relative;
+        width: 1000px;
+        margin: auto;
+    }
+     
+    #primary_nav {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        background: none;
+    }
+     
+    #primary_nav li {
+        display: inline;
+    }
+     
+    #primary_nav li a {
+        float: left;
+        border: none;
+        padding: 0 10px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+    }
+    #primary_nav li.top {
+    display: none;
+    }
+}
+
+/*education table*/
+
+#education table {
+    padding: 5px;
+    width: 100%;
+}
+
+#education td {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+
+#education td.grade {
+    text-align: center;
+}
+
+#education th {
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid #c5c5c5;
+    padding: 5px 0;
+    font-weight: bold;
+}
+#education tr.odd {
+    background-color: #efefef;
+}
+
+.title > h3 {
+    border-bottom: 1px solid #c5c5c5;
+}
+
+/*change to jquery add class hide*/
+article > .content:not(:first-child) {
+    display: none;
+}
+
+article .content {
+
+}
