@@ -15,7 +15,7 @@ ul {
 }
 
 a {
-    color: #1D745A;
+    color: #555;
 }
 
 h1 {
@@ -146,6 +146,7 @@ a.to_nav:focus {
 /*footer*/
 
 footer {
+    margin: 20px auto;
     font-family: inherit;
     font-style: normal;
     text-align: center;
