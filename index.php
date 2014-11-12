@@ -2,9 +2,10 @@
 
 require_once("inc/config.php");
 
-include("inc/header.php") ?>
+include(ROOT_PATH . "inc/header.php"); ?>
+	
+	<?php include (ROOT_PATH . 'inc/div1.php'); ?>
+        <?php include(ROOT_PATH . "inc/projects.php");?>
 
-        <?php include("projects.php");?>
 
-
-<?php include 'inc/footer.php'; ?>
+<?php include (ROOT_PATH . 'inc/footer.php'); ?>

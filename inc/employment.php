@@ -1,4 +1,4 @@
-<article id="employment" class="section">
+<article id="employment" class="section employment">
     <h2>Employment</h2>
     <div class="content employment">    
             <div class="title">

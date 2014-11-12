@@ -1,4 +1,4 @@
-<article id="education" class="section">
+<article id="education" class="section education">
     <h2>Education</h2>
     <div class="content">
         <table>
