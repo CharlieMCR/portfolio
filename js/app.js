@@ -9,3 +9,9 @@ $('.employment .description').addClass('hide');
 $('.title').click(function() {
     $(this).next().slideToggle();
 });
+
+// $('.project a').hover(function(){
+// 	$(this).children('p').hide();
+// }, function(){
+// 	$(this).children('p').show();
+// });

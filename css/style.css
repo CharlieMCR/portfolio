@@ -145,7 +145,7 @@ footer {
     text-align: center; }
 .education th {
   letter-spacing: 0.1em;
-  border-bottom: 1px solid #c5c5c5;
+  border-bottom: 1px solid #ccc;
   padding: 5px 0;
   font-weight: bold; }
 .education tr.odd {
@@ -155,44 +155,38 @@ footer {
   list-style: disc inside none;
   padding: 0.5em 0 0; }
 .employment .title > h3 {
-  border-bottom: 1px solid #c5c5c5;
+  border-bottom: 1px solid #ccc;
   margin: 1em 0 0.75em; }
 
-.projects {
-  max-width: 100%; }
+.container {
+  width: 100%; }
 
-.project {
-  margin: 0;
-  padding: 0; }
-  .project li {
-    float: left;
-    max-width: 95%;
-    margin: 2.5%; }
-    .project li a p {
-      margin: 0;
-      padding: 5%;
-      text-align: center; }
-    @media screen and (min-width: 480px) {
-      .project li {
-        max-width: 45%; } }
-    @media screen and (min-width: 768px) {
-      .project li {
-        max-width: 28.3333%; } }
-    @media screen and (min-width: 1024px) {
-      .project li {
-        max-width: 23%; } }
-
-.hide {
-  display: none; }
-
-div .one {
-  height: 500px;
+.box_container {
   background: rgba(204, 204, 204, 0.5);
+  height: 500px; }
+
+.box.one {
+  width: 82.91457%;
+  float: left;
+  margin: 7.93651%;
   text-align: center;
   color: #555; }
-  div .one h1 {
+  .box.one h1 {
     font-size: 3em;
     margin: 0 auto 30px;
     padding-top: 50px; }
+
+.box {
+  width: 82.91457%;
+  float: left;
+  margin: 7.93651%;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .box {
+      width: 40.20101%;
+      margin: 3.0303%; } }
+
+.hide {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

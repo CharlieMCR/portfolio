@@ -1,6 +1,6 @@
 <article id="skills" class="section">
     <h2>Skills</h2>
-    <div class="content">
+    <div class="content container">
         <p>All of the skills I am able to work with. Lorem ipsum dolor sit.</p>
         <ul>
             <li>HTML5</li>

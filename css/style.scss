@@ -1,24 +1,29 @@
 // @import "_normalize.scss";
 @import "bourbon/_bourbon.scss";
+@import "bourbon/functions/_flex-grid.scss";
+@import "bourbon/css3/_flex-box";
 
-$color1:#1c1c1c;
-$color2:#555;
-$color3:#ccc;
-$color4:#383838;
-$color5:#c5c5c5;
-$color6:#efefef;
+$black:#1c1c1c;
+$dark:#383838;
+$grey:#555;
+$light:#ccc;
+$white:#efefef;
+
+$fg-column: 60px;             // Column Width
+$fg-gutter: 25px;             // Gutter Width
+$fg-max-columns: 12;          // Total Columns For Main Container
 
 html {
 }
 body {
     font-family: 'Droid Sans', Verdana, serif;
     font-size: 1em;
-    color: #1c1c1c;
+    color: $black;
     @media screen and (min-width: 768px) {
         font-family: 'Droid Serif', Georgia, serif;
     }
     a {
-    color: #555;
+    color: $grey;
     text-decoration: none;
     }
     h1, h2, h3, h4, .nav {
@@ -78,7 +83,7 @@ article {
 /*header*/
 
 header {
-    background: #555;
+    background: $grey;
     /*padding: 15px 20px;*/
     height: 52px;
     top: 0px;
@@ -104,7 +109,7 @@ h1.logo {
     float: left;
     margin: 0;
     a {
-    color: #ccc;
+    color: $light;
     text-decoration: none;
     font-weight: normal;
     text-transform: none;
@@ -117,16 +122,16 @@ h1.logo {
 
 a.to_nav {
     float: right;
-    color: #ccc;
-    background: #555;
+    color: $light;
+    background: $grey;
     text-decoration: none;
     padding: 12px 18px 12px;
     font-size: 1.75em;
     // font-weight: bold;
     &:hover,
     &:focus {
-        color: #1c1c1c;
-        background: #ccc;
+        color: $black;
+        background: $light;
     }
     @media screen and (min-width: 768px) {
         display: none;
@@ -144,24 +149,24 @@ a.to_nav {
     }
     ul {
         list-style: none;
-        background: #555;
+        background: $grey;
         padding: 5px 0;
     }
     li {
         a {
             display: block;
             padding: 7px 20px;
-            color: #ccc;
+            color: $light;
             text-decoration: none;
             font-weight: normal;
             text-transform: none;
             line-height: 2em;
             height: 2em;
-            border-bottom: 1px solid #383838;
+            border-bottom: 1px solid $dark;
             &:hover,
             &:focus {
-                color: #1c1c1c;
-                background: #ccc;
+                color: $black;
+                background: $light;
             }
             @media screen and (min-width: 768px) {
                 float: left;
@@ -221,12 +226,12 @@ footer {
     }
     th {
         letter-spacing: 0.1em;
-        border-bottom: 1px solid #c5c5c5;
+        border-bottom: 1px solid $light;
         padding: 5px 0;
         font-weight: bold;
     }
     tr.odd {
-        background-color: #efefef;
+        background-color: $white;
     }
 }
 
@@ -239,60 +244,44 @@ footer {
         }
     }
     .title > h3 {
-        border-bottom: 1px solid #c5c5c5;
+        border-bottom: 1px solid $light;
         margin: 1em 0 0.75em;
     }
 }
 
-.projects {
-    max-width: 100%;
+.container {
+    width: flex-grid(12);
+    // margin-left: flex-gutter();
+    // margin-right: flex-gutter();
 }
 
-.project {
-    margin: 0;
-    padding: 0;
-    li {
-        float: left;
-        max-width: 95%;
-        margin: 2.5%;
-        a p {
-            margin: 0;
-            padding: 5%;
-            text-align: center;
-        }        
-        @media screen and (min-width: 480px) {
-            max-width: 45%;
-        }
-        @media screen and (min-width: 768px) {
-            max-width: 28.3333%;
-        }
-        @media screen and (min-width: 1024px) {
-            max-width: 23%;
-    }
+.box_container {
+    background: rgba(204, 204, 204, 0.5);
+    height: 500px;
+}
+
+.box.one {
+    width: flex-grid(10);
+    float: left;
+    margin: flex-gutter(4);
+    text-align: center;
+    color: $grey;
+    h1 {
+        font-size: 3em;
+        margin: 0 auto 30px;
+        padding-top: 50px;
     }
 }
 
+.box {
+    width: flex-grid(10);
+    float: left;
+    margin: flex-gutter(4);
+    text-align: center;
+    @media screen and (min-width: 768px) {
+        width: flex-grid(5);
+        margin: flex-gutter(10);
+        }
+}
 
 .hide { display: none; }
-
-div {
-    .one {
-        height: 500px;
-        background: rgba(204, 204, 204, 0.5);
-        text-align: center;
-        color: $color2;
-        h1 {
-            font-size: 3em;
-            margin: 0 auto 30px;
-            padding-top: 50px;
-        }
-    }
-//     .two {
-//         height: 500px;
-//         background: rgba(204, 204, 204, 0.7);
-//     }
-//     .three {
-//         height: 500px;
-//         background: rgba(204, 204, 204, 0.9);
-//     }
-}
