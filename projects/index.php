@@ -3,7 +3,7 @@
 require_once("../inc/config.php");
 
 $pageTitle = "About Soundfactory Development";
-$section = "about";
+$section = "projects";
 include(ROOT_PATH . 'inc/header.php'); ?>
 
 

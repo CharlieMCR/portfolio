@@ -1,7 +1,7 @@
 <footer>
          
     <p>Copyright &copy;<?php echo date('Y'); ?> <a href="http://www.charlieheesom.com">Charlie Heesom</a></p>
- 
+
 	<a href="http://twitter.com/charliemcr"><img src="<?php echo BASE_URL; ?>img/twitter.png" alt="Twitter Logo" class="social-icon"></a>
     <a href="https://github.com/CharlieMCR"><img src="<?php echo BASE_URL; ?>img/github.png" alt="Github Logo" class="social-icon"></a>
     <a href="http://stackoverflow.com/users/4244751/charliemcr"><img src="<?php echo BASE_URL; ?>img/stackoverflow.png" alt="Stackoverflow Logo" class="social-icon"></a>

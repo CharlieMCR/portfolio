@@ -1,6 +1,6 @@
-<article id="employment" class="section employment">
-    <h2>Employment</h2>
-    <div class="content employment">    
+    <h2 class="title">Employment</h2>
+    <div class="content employment container">
+        <div class="job">
             <div class="title">
                 <h3>June 2012 - Present:</h3>
                 <h4>Bakerie Bread and Wine Bar, Manchester</h4>
@@ -16,6 +16,7 @@
                     <li>Continuously working towards improving sales and service.</li>
                 </ul>
             </div>
+        </div>
         <div class="job">
             <div class="title">
                 <h3>September 2007 -  June 2012:</h3>
@@ -85,4 +86,3 @@
             </div>
         </div>
     </div>    
-</article>

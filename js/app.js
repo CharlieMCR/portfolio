@@ -1,17 +1,18 @@
-// hide all but first section content, toggle display on each
-$('article + article:nth-child(1n+2) .content').addClass('hide');
-$('.section h2').click(function() {
-    $(this).next().slideToggle();
-});
+(function($, w, undefined){
+    $(function(){
 
-// hide all job descriptions, toggle display on each
+// hide div beneath second h2
+
+$('.title:nth-of-type(1n+2) ~ div').addClass('hide');
 $('.employment .description').addClass('hide');
 $('.title').click(function() {
     $(this).next().slideToggle();
 });
 
-// $('.project a').hover(function(){
-// 	$(this).children('p').hide();
-// }, function(){
-// 	$(this).children('p').show();
-// });
+
+
+        
+    }); // end ready
+
+    // stuff not needing dom can run here.
+})(jQuery, window);

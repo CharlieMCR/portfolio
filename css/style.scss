@@ -9,9 +9,11 @@ $grey:#555;
 $light:#ccc;
 $white:#efefef;
 
-$fg-column: 60px;             // Column Width
-$fg-gutter: 25px;             // Gutter Width
-$fg-max-columns: 12;          // Total Columns For Main Container
+$fg-column: 100px;             // Column Width
+$fg-gutter: 0px;             // Gutter Width
+$fg-max-columns: 10;          // Total Columns For Main Container
+
+@import "_navigation.scss";
 
 html {
 }
@@ -59,6 +61,11 @@ body {
 /*layout*/
 
 .wrapper {
+     & > h2 {
+        border-bottom: 1px solid #d8d8d8;
+        padding: 10px 20px;
+        margin: 10px 0;
+        }
     @media screen and (min-width: 768px) {
         position: relative;
         width: 768px;
@@ -69,145 +76,7 @@ body {
     }
 }
 
-article {
-    border-bottom: 1px solid #d8d8d8;
-    padding: 10px 20px;
-    margin: 10px 0;
-    .content {
-        li {
-            margin: 0.5em;
-        }
-    }
-}
 
-/*header*/
-
-header {
-    background: $grey;
-    /*padding: 15px 20px;*/
-    height: 52px;
-    top: 0px;
-}
-    // /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack*/
-    // header:before,
-    // header:after {
-    //     content: "";
-    //     display: table;
-    // }
-    
-    // header:after {
-    //     clear:both;
-    // }
-
-    // /* For IE 6/7 (trigger hasLayout) */
-    // header {
-    //     zoom:1;
-    // }
-
-h1.logo {
-    padding: 15px 20px;
-    float: left;
-    margin: 0;
-    a {
-    color: $light;
-    text-decoration: none;
-    font-weight: normal;
-    text-transform: none;
-    font-size: 20px;
-    line-height: 22px;
-    float: left;
-    letter-spacing: normal;
-    }
-}
-
-a.to_nav {
-    float: right;
-    color: $light;
-    background: $grey;
-    text-decoration: none;
-    padding: 12px 18px 12px;
-    font-size: 1.75em;
-    // font-weight: bold;
-    &:hover,
-    &:focus {
-        color: $black;
-        background: $light;
-    }
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
-}
-
-/*navigation*/
-
-.nav {
-    @media screen and (min-width: 768px) {
-        position: absolute;
-        top: 0px;
-        right: 10px;
-        background: none;
-    }
-    ul {
-        list-style: none;
-        background: $grey;
-        padding: 5px 0;
-    }
-    li {
-        a {
-            display: block;
-            padding: 7px 20px;
-            color: $light;
-            text-decoration: none;
-            font-weight: normal;
-            text-transform: none;
-            line-height: 2em;
-            height: 2em;
-            border-bottom: 1px solid $dark;
-            &:hover,
-            &:focus {
-                color: $black;
-                background: $light;
-            }
-            @media screen and (min-width: 768px) {
-                float: left;
-                border: none;
-                padding: 10px 10px 10px;
-                margin-top: -5px;
-                }
-        }
-        &:last-child a {
-            border-bottom: none;
-            }
-            @media screen and (min-width: 768px) {
-                display: inline;
-            }
-        &.top {
-            @media screen and (min-width: 768px) {
-                display: none;
-            }
-        }
-    }
-}
-
-/*footer*/
-
-footer {
-    margin: 30px auto;
-    font-family: inherit;
-    font-style: normal;
-    text-align: center;
-    clear: both;
-    // font-size: 14px;
-    // background: $color3;
-    .social-icon {
-      width: 32px;
-      height: 32px;
-      padding: 20px 0;
-      margin: 0 5px;
-      @include prefixer (border-radius, 50%, webkit moz);
-      border-radius: 50%;
-    }
-}
 
 /*education table*/
 
@@ -250,38 +119,102 @@ footer {
 }
 
 .container {
-    width: flex-grid(12);
-    // margin-left: flex-gutter();
-    // margin-right: flex-gutter();
+    width: flex-grid(10);
+    margin: 30px auto;
+    
 }
 
-.box_container {
+.container.front {
     background: rgba(204, 204, 204, 0.5);
     height: 500px;
-}
-
-.box.one {
-    width: flex-grid(10);
-    float: left;
-    margin: flex-gutter(4);
-    text-align: center;
-    color: $grey;
-    h1 {
-        font-size: 3em;
-        margin: 0 auto 30px;
-        padding-top: 50px;
-    }
+    margin-top: 0;
 }
 
 .box {
     width: flex-grid(10);
     float: left;
-    margin: flex-gutter(4);
+    // margin: flex-gutter(10);
     text-align: center;
+    &.one {
+        width: flex-grid(10);
+        float: left;
+        margin: flex-gutter(10);
+        text-align: center;
+        color: $grey;
+        h1, h2, p {
+            padding: 0 30px;
+            margin: 0 auto 30px;
+        }
+        h1 {
+            font-size: 3em;
+            padding-top: 50px;
+        }
+    }
     @media screen and (min-width: 768px) {
         width: flex-grid(5);
-        margin: flex-gutter(10);
+        margin: flex-gutter(1);
         }
 }
 
+.box.project {
+    margin: 30px auto;
+    a { 
+        position: relative; 
+        display: inline-block;
+        overflow: hidden;
+        img {
+            width: 100%;
+            }
+        p {
+            position: absolute;
+            top: 0;
+            left: 5%;
+            right: 5%;
+            bottom: 0;
+            margin: 0;
+            background: $grey;
+            color: $light;
+            opacity:0;
+            transition:1s;
+            padding: 5%;
+            &:before {
+                    pointer-events: none;
+                    position: absolute;
+                    content: '';
+                    height: 0;
+                    width: 0;
+                    bottom: 0;
+                    right: 0;
+                    background: white;
+                    /* IE9 */
+                    background: linear-gradient(315deg, white 45%, #aaaaaa 50%, #cccccc 20%, white 80%);
+                    
+                    box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.4);
+                    -webkit-transition-duration: 0.3s;
+                    transition-duration: 0.3s;
+                    -webkit-transition-property: width, height;
+                    transition-property: width, height;
+                }
+            &:hover:before, &:focus:before, &:active:before {
+                width: 25px;
+                height: 25px;
+                }
+            }
+        &:hover p {
+            opacity: 1;
+            }
+        }
+
+}
 .hide { display: none; }
+
+
+
+
+
+
+
+
+
+
+

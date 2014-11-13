@@ -1,0 +1,137 @@
+/* 
+
+Header,  Navigation and Footer
+
+*/
+
+header {
+    background: $grey;
+    height: 52px;
+    top: 0px;
+}
+    // /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack*/
+    // header:before,
+    // header:after {
+    //     content: "";
+    //     display: table;
+    // }
+    
+    // header:after {
+    //     clear:both;
+    // }
+
+    // /* For IE 6/7 (trigger hasLayout) */
+    // header {
+    //     zoom:1;
+    // }
+    
+
+h1.logo {
+    padding: 15px 20px;
+    float: left;
+    margin: 0;
+    a {
+    color: $light;
+    text-decoration: none;
+    font-weight: normal;
+    text-transform: none;
+    font-size: 20px;
+    line-height: 22px;
+    float: left;
+    letter-spacing: normal;
+    }
+}
+
+a.to_nav {
+    float: right;
+    color: $light;
+    background: $grey;
+    text-decoration: none;
+    padding: 12px 18px 12px;
+    font-size: 1.75em;
+    // font-weight: bold;
+    &:hover,
+    &:focus {
+        color: $black;
+        background: $light;
+    }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+/*navigation*/
+
+.nav {
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        background: none;
+    }
+    ul {
+        list-style: none;
+        background: $grey;
+        padding: 5px 0;
+    }
+    li {
+        a {
+            display: block;
+            padding: 7px 20px;
+            color: $light;
+            text-decoration: none;
+            font-weight: normal;
+            text-transform: none;
+            line-height: 2em;
+            height: 2em;
+            border-bottom: 1px solid $dark;
+            &:hover,
+            &:focus {
+                color: $black;
+                background: $light;
+            }
+            @media screen and (min-width: 768px) {
+                float: left;
+                border: none;
+                padding: 10px 10px 10px;
+                margin-top: -5px;
+                }
+        }
+        &.on a {
+            color: $white;
+            text-decoration: underline;
+        }
+        &:last-child a {
+            border-bottom: none;
+            }
+            @media screen and (min-width: 768px) {
+                display: inline;
+            }
+        &.top {
+            @media screen and (min-width: 768px) {
+                display: none;
+            }
+        }
+    }
+}
+
+/*footer*/
+
+footer {
+    padding-top: 30px;
+    margin: 30px auto;
+    font-family: inherit;
+    font-style: normal;
+    text-align: center;
+    clear: both;
+    // font-size: 14px;
+    // background: $color3;
+    .social-icon {
+      width: 32px;
+      height: 32px;
+      padding: 20px 0;
+      margin: 0 5px;
+      @include prefixer (border-radius, 50%, webkit moz);
+      border-radius: 50%;
+    }
+}
