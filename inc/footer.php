@@ -1,6 +1,6 @@
 <footer>
          
-    <p>Copyright &copy;<?php echo date('Y'); ?> <a href="http://www.charlieheesom.com">Charlie Heesom</a></p>
+    <p>Copyright &copy;<?php echo date('Y'); ?> <a href="http://www.charlimcr.com">Charlie Mcr</a></p>
 
 	<a href="http://twitter.com/charliemcr"><img src="<?php echo BASE_URL; ?>img/twitter.png" alt="Twitter Logo" class="social-icon"></a>
     <a href="https://github.com/CharlieMCR"><img src="<?php echo BASE_URL; ?>img/github.png" alt="Github Logo" class="social-icon"></a>

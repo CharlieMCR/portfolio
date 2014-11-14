@@ -4,7 +4,7 @@
 <head>
  
     <meta charset="utf-8">
-    <title>Charlie Heesom</title>
+    <title>Charlie MCR</title>
     <meta name="description" content="Portfolio of">
     <meta name="author" content="Charlie Heesom">
     <meta name="robots" content="nofollow" />
@@ -33,9 +33,9 @@
      
 <header>
 
-    <h1 class="logo"><a href="/">Charlie Heesom</a></h1>
+    <h1 class="logo"><a href="/">Charlie Mcr</a></h1>
 
     <a class="to_nav" href="#primary_nav">&#x2261;</a>
 
 </header>
-<div class="wrapper">
+

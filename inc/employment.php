@@ -1,5 +1,5 @@
     <h2 class="title">Employment</h2>
-    <div class="content employment container">
+    <div class="content container group employment">
         <div class="job">
             <div class="title">
                 <h3>June 2012 - Present:</h3>
