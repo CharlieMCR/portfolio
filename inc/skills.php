@@ -1,6 +1,7 @@
 <h2 class="title">Skills</h2>
-<div class="content container group skills">
-<div class="box skill">
+<div class="group">
+<div class="box col skill s4">
+<div class="inner">
     <p>All of the skills I am able to work with. Lorem ipsum dolor sit.</p>
     <ul>
         <li>HTML5</li>
@@ -17,5 +18,6 @@
     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
 </div>
 </div>

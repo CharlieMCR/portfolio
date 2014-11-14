@@ -1,0 +1,60 @@
+/*layout*/
+
+.wrapper {
+     & > h2 {
+        border-bottom: 1px solid #d8d8d8;
+        padding: 10px 20px;
+        margin: 10px auto;
+        }
+    @media screen and (min-width: 768px) {
+        position: relative;
+        width: 768px;
+        margin: auto;
+    }
+    @media screen and (min-width: 1024px) {
+        width: 1000px;
+    }
+}
+
+.col {
+    width: flex-grid(10);
+    float: left; 
+    margin: 30px auto;
+}
+
+.col.s1 {
+    width: flex-grid(10);
+    float: left; 
+    margin: 30px auto;
+    @media screen and (min-width: 768px) {
+        width: flex-grid(2.5);
+        }
+}
+
+.col.s2 {
+    width: flex-grid(10);
+    float: left; 
+    margin: 30px auto;
+    @media screen and (min-width: 768px) {
+        width: flex-grid(5);
+        }
+}
+
+.col.s3 {
+    width: flex-grid(10);
+    float: left; 
+    margin: 30px auto;
+    @media screen and (min-width: 768px) {
+        width: flex-grid(7.5);
+        }
+}
+
+.col.s4 {
+    width: flex-grid(10);
+    float: left; 
+    margin: 30px auto;
+}
+
+.inner {
+    margin: 0 1em;
+}

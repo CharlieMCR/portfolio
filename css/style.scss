@@ -11,7 +11,7 @@ $light:#ccc;
 $white:#efefef;
 
 $fg-column: 100px;             // Column Width
-$fg-gutter: 0px;             // Gutter Width
+$fg-gutter: 10px;             // Gutter Width
 $fg-max-columns: 10;          // Total Columns For Main Container
 
 @import "_navigation.scss";
@@ -58,31 +58,19 @@ body {
     img {
         max-width: 100%;
     }
-}
-
-/*layout*/
-
-.wrapper {
-     & > h2 {
-        border-bottom: 1px solid #d8d8d8;
-        padding: 10px 20px;
-        margin: 10px auto;
+    ul {
+        // padding: 0 1em;
+        li {
+            padding: 0.25em;
         }
-    @media screen and (min-width: 768px) {
-        position: relative;
-        width: 768px;
-        margin: auto;
-    }
-    @media screen and (min-width: 1024px) {
-        width: 1000px;
     }
 }
 
-
+@import "_layout.scss";
 
 /*education table*/
 
-.box.education {
+.education {
     width: flex-grid(9.6);
     margin: auto;
     float: initial;
@@ -128,13 +116,7 @@ body {
     }
 }
 
-.container {
-    width: flex-grid(10);
-    margin: 30px auto;
-    
-}
-
-.container.front {
+.front {
     @include prefixer (
         background  linear-gradient, (
                     (rgb(204,204,204), rgba(255,255,255,0) 75%), 
@@ -147,55 +129,22 @@ body {
                 no-repeat center center fixed;
     background-size: cover;
     height: 500px;
-    margin-top: 0;
 }
-.box {
-    width: flex-grid(10);
-    float: left;    
-    &.one {
-        width: flex-grid(10);
-        float: left;
-        margin: flex-gutter(10);
-        text-align: center;
-        color: $dark;
-        h1, h2, p {
-            padding: 0 30px;
-            margin: 0 auto 30px;
-        }
-        h1 {
-            font-size: 3em;
-            padding-top: 50px;
-        }
+
+.one {
+    text-align: center;
+    color: $dark;
+    h1, h2, p {
+        padding: 0 30px;
+        margin: 0 auto 30px;
     }
-    &.project {
-    @media screen and (min-width: 768px) {
-        width: flex-grid(4.8);
-        margin: flex-gutter(1);
-        margin: 2%;
-        padding: 0 1%;
-        }
+    h1 {
+        font-size: 3em;
+        padding-top: 1em;
     }
 }
 
-.box.skill {
-    width: flex-grid(10);
-    float: left;
-    margin: auto;
-    padding: 0;
-    p {
-        padding: 0 1em;
-    }
-    ul {
-        padding: 0 1em;
-        li {
-            padding: 0.25em;
-        }
-    }
-}
-
-
-.box.project {
-    margin: 1em auto;
+.project {
     text-align: center;
     a { 
         position: relative; 
@@ -254,12 +203,6 @@ body {
 
 }
 .hide { display: none; }
-
-
-.projects {
-    // background: green;
-}
-
 
 
 

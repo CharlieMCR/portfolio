@@ -1,5 +1,7 @@
     <h2 class="title">Employment</h2>
-    <div class="content container group employment">
+    <div class="group">
+    <div class="col s4">
+    <div class="inner employment">
         <div class="job">
             <div class="title">
                 <h3>June 2012 - Present:</h3>
@@ -86,3 +88,5 @@
             </div>
         </div>
     </div>    
+    </div>
+    </div>

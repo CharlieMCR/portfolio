@@ -1,6 +1,7 @@
     <h2 class="title">Education</h2>
-    <div class="content container group">
-        <div class="box education">
+    <div class="group">
+    <div class="col s4">
+        <div class="inner education">
             <table>
                 <thead>
                     <tr>
@@ -65,4 +66,5 @@
                 </tbody>
             </table>
         </div>
+    </div>
     </div>
