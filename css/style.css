@@ -209,9 +209,9 @@ body {
     margin: 1em 0 0.75em; }
 
 .front {
-  -webkit-background linear-gradient: #cccccc, rgba(255, 255, 255, 0) 75%, url("../img/bg.jpeg"), no-repeat center center fixed;
-  -moz-background linear-gradient: #cccccc, rgba(255, 255, 255, 0) 75%, url("../img/bg.jpeg"), no-repeat center center fixed;
-  background: linear-gradient(#cccccc, rgba(255, 255, 255, 0) 75%), url("../img/bg.jpeg") no-repeat center center fixed;
+  -webkit-background linear-gradient: #cccccc, rgba(255, 255, 255, 0) 75%, url("../img/bg640.jpg"), no-repeat center center fixed;
+  -moz-background linear-gradient: #cccccc, rgba(255, 255, 255, 0) 75%, url("../img/bg640.jpg"), no-repeat center center fixed;
+  background: linear-gradient(#cccccc, rgba(255, 255, 255, 0) 75%), url("../img/bg640.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 500px; }
 
@@ -219,11 +219,20 @@ body {
   text-align: center;
   color: #383838; }
   .one h1, .one h2, .one p {
-    padding: 0 30px;
-    margin: 0 auto 30px; }
+    padding: 0 10px;
+    margin: 0 auto 20px; }
   .one h1 {
-    font-size: 3em;
-    padding-top: 1em; }
+    font-size: 1.5em;
+    padding-top: 0.1em; }
+  .one h2 {
+    font-size: 1.25em; }
+  @media screen and (min-width: 768px) {
+    .one h1, .one h2, .one p {
+      padding: 0 30px;
+      margin: 0 auto 30px; }
+    .one h1 {
+      font-size: 3em;
+      padding-top: 1em; } }
 
 .project {
   text-align: center; }
