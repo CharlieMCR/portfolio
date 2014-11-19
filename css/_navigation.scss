@@ -100,6 +100,11 @@ a.to_nav {
         &.on a {
             color: $white;
             text-decoration: underline;
+            &:hover,
+            &:focus {
+                color: $black;
+                background: $light;
+            }
         }
         &:last-child a {
             border-bottom: none;

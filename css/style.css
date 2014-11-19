@@ -69,6 +69,9 @@ a.to_nav {
 .nav li.on a {
   color: #efefef;
   text-decoration: underline; }
+  .nav li.on a:hover, .nav li.on a:focus {
+    color: #1c1c1c;
+    background: #ccc; }
 .nav li:last-child a {
   border-bottom: none; }
 @media screen and (min-width: 768px) {
