@@ -101,7 +101,9 @@ body {
   color: #1c1c1c; }
   @media screen and (min-width: 768px) {
     body {
-      font-family: 'Droid Serif', Georgia, serif; } }
+      font-family: 'Droid Serif', Georgia, serif; }
+      body input[type=submit] {
+        font-family: 'Droid Serif', Georgia, serif; } }
   body a {
     color: #555;
     text-decoration: none; }
@@ -281,6 +283,36 @@ body {
         height: 25px; }
     .project a:hover p {
       opacity: 1; }
+
+.contact {
+  text-align: center; }
+  .contact form {
+    margin: 1em auto; }
+    .contact form label {
+      display: block; }
+    .contact form input {
+      width: 90%;
+      height: 2em;
+      margin: 0.5em auto 2em;
+      border: 1px solid #ccc; }
+      .contact form input[type=submit] {
+        background-color: #ccc;
+        border: none;
+        height: 2em;
+        margin: 2em auto 0;
+        font-size: 1.2em; }
+        .contact form input[type=submit]:hover {
+          background: #555;
+          color: #ccc; }
+      .contact form input:hover, .contact form input:focus {
+        background: #efefef; }
+    .contact form textarea {
+      width: 90%;
+      height: 7em;
+      margin-top: 0.5em;
+      border: 1px solid #ccc; }
+      .contact form textarea:hover, .contact form textarea:focus {
+        background: #efefef; }
 
 .hide {
   display: none; }

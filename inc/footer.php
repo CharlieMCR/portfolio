@@ -15,7 +15,9 @@
         <li class="about <?php if ($section == "about") { echo "on"; } ?>"><a href="<?php echo BASE_URL; ?>about/">About</a></li>
         <li class="cv <?php if ($section == "cv") { echo "on"; } ?>"><a href="<?php echo BASE_URL; ?>cv/">CV</a></li>
         <li class="projects <?php if ($section == "projects") { echo "on"; } ?>"><a href="<?php echo BASE_URL; ?>projects/">Projects</a></li>
+        <li class="projects <?php if ($section == "contact") { echo "on"; } ?>"><a href="<?php echo BASE_URL; ?>contact/">Contact</a></li>
         <li class="top"><a href="#home">Top</a></li>
+
      
     </ul>
 

@@ -12,8 +12,8 @@
 
 	var windowHeight = $(window).height();
 	var windowWidth = $(window).width();
-	console.log(windowHeight);
-	console.log(windowWidth);
+	// console.log(windowHeight);
+	// console.log(windowWidth);
 	$('.front').css('height', windowHeight - 52);
 
 	$('#main-content').css('minHeight', windowHeight);
