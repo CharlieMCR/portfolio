@@ -2,7 +2,7 @@
 
 require_once("../inc/config.php");
 
-$pageTitle = "About Soundfactory Development";
+$pageTitle = "Charlie Mcr | Work";
 $section = "cv";
 include(ROOT_PATH . 'inc/header.php'); ?>
 <div class="wrapper group">

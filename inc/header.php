@@ -4,7 +4,7 @@
 <head>
  
     <meta charset="utf-8">
-    <title>Charlie MCR</title>
+    <title><?php echo $pageTitle ?></title>
     <meta name="description" content="Portfolio of">
     <meta name="author" content="Charlie Heesom">
     <meta name="robots" content="nofollow" />
