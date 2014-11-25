@@ -16,6 +16,10 @@
     }
 }
 
+.row {
+    width: flex-grid(10);
+}
+
 .col {
     width: flex-grid(10);
     float: left; 
@@ -26,6 +30,9 @@
     width: flex-grid(10);
     float: left; 
     margin: 30px auto;
+    @media screen and (min-width: 480px) {
+        width: flex-grid(5);
+        }
     @media screen and (min-width: 768px) {
         width: flex-grid(2.5);
         }
@@ -35,6 +42,9 @@
     width: flex-grid(10);
     float: left; 
     margin: 30px auto;
+    @media screen and (min-width: 480px) {
+        width: flex-grid(5);
+        }
     @media screen and (min-width: 768px) {
         width: flex-grid(5);
         }

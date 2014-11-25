@@ -8,13 +8,10 @@ include(ROOT_PATH . 'inc/header.php'); ?>
 	<div class="wrapper group">
 			<div class="col s3 group">
 				<div class="group inner">
-					<h2>Hello</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h2>Charlie Mcr</h2>
+					<p>Hello, I am a Web Developer in Manchester. I am constantly developing my skill set, looking to learn new frameworks, improving workflows and design patterns.</p>
+
+					<p>I would like to put these skills to use in a role that challenges me and allows me to further develop my skill set. </p>
 				</div>
 			</div>
 			<div class="col s1 group">
@@ -26,9 +23,22 @@ include(ROOT_PATH . 'inc/header.php'); ?>
 				        <li>Javascript</li>
 				        <li>JQuery</li>
 				        <li>PHP</li>
+				        <li>MySQL</li>
 				    </ul>
 			    </div>
 			</div>
+			<div class="col s2 group">
+				<div class="group inner">
+					<h2>Workflow</h2>
+					<ul>
+				        <li>Text Editor - Sublime Text</li>
+				        <li>CSS Pre-processor - Sass</li>
+				        <li>Version control - Git</li>
+				        <li>Linux - Bash</li>
+				    </ul>
+			    </div>
+			</div>
+
 
 
 

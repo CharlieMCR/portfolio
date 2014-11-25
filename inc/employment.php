@@ -27,7 +27,6 @@
             </div>
             <div class="description">
                 <ul>
-                    <li>Trained in closing and opening procedures along with cash handling.</li>
                     <li>Handling customer complaints, resolving any issues.</li>
                     <li>Setting a level of customer service I expect all staff to follow.</li>
                     <li>Responsible for supervising staff according to the demands of the night.</li>
@@ -57,7 +56,6 @@
                 <ul>
                     <li>Displaying an excellent level of customer service for luxury products.</li>
                     <li>Regularly achieving sales targets.</li>
-                    <li>Taking deliveries and keeping the stock organised.</li>
                     <li>Key holder responsibilities.</li>
                 </ul>
             </div>
@@ -83,7 +81,6 @@
             </div>
             <div class="description">
                 <ul>
-                    <li>Do you even care about this??</li>
                 </ul>
             </div>
         </div>

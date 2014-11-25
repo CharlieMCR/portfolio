@@ -48,16 +48,6 @@
                         <td>A Level Media Studies</td>
                         <td class="grade">D</td>
                     </tr>
-                    <!--<tr>
-                        <td></td>
-                        <td>AS Level Film Studies</td>
-                        <td class="grade">E</td>
-                    </tr>
-                    <tr class="odd">
-                        <td></td>
-                        <td>AS Level Maths</td>
-                        <td class="grade">E</td>
-                    </tr>-->
                     <tr>
                         <td>1996 - 2001</td>
                         <td>9 GCSE's</td>
